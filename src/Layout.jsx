@@ -1,18 +1,18 @@
 import { Outlet } from 'react-router'
+import Header from './components/UniversalComponents/Header'
+import Footer from './components/UniversalComponents/Footer'
 
 function Layout() {
 
   return (
     <>
-      <header>
-      </header>
+      <Header/>
 
       <main>
         < Outlet/>
       </main>
 
-      <footer>
-      </footer>
+      <Footer/>
     </>
   )
 }
