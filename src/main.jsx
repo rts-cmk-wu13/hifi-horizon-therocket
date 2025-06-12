@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './base.scss'
+import './styles/styles.scss'
 import { RouterProvider } from 'react-router'
 import router from './router.jsx'
 import { QueryClientProvider } from '@tanstack/react-query'

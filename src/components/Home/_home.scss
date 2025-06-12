@@ -1,0 +1,8 @@
+@use '/src/styles/variables' as *;
+
+
+.home{
+    &__headline{
+        font-family: 'OpenSans', sans-serif;
+    }
+}
