@@ -9,3 +9,10 @@
 :root{
     background-color: $backgroundColor;
 }
+
+#root{
+    width: min(100%, 1200px);
+    margin: 0 auto;
+    border: 1px solid grey;
+}
+
