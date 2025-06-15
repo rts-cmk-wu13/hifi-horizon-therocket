@@ -1,1 +1,127 @@
+@use '_variables' as *;
+
+.footer {
+
+    background-color: $blackColor;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+
+    p {
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    &__logo {
+        width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        a {
+            color: $backgroundColor;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        a {
+            color: $backgroundColor;
+
+            &:hover {
+                color: lighten($backgroundColor, 20%);
+            }
+        }
+    }
+
+    a {
+        color: $backgroundColor;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: inline;
+        }
+    }
+
+    &__primary {
+        display: flex;
+
+    }
+
+    &__moreinfoItems {
+        margin-left: 10rem;
+
+        p {
+            text-align: left;
+        }
+    }
+
+    &__contactItems {
+        p {
+            text-align: left;
+        }
+    }
+
+    &__contactItem{
+        img{
+            margin-right: 1rem;
+         }
+    }
+
+    &__contact {
+        margin-left: 10rem;
+        text-align: left;
+    }
+
+    &__socialsItem {
+        margin-left: 0.5rem;
+        text-align: left;
+
+        img{
+            margin-top: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__socials {
+        margin-left: 0;
+    }
+
+    &__secondary {
+        text-align: left;
+        margin-top: 20px;
+
+        img {
+            margin-right: 1rem;
+        }
+
+    }
+}
+
 // universel - header + footer 
