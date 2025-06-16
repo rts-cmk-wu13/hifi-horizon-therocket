@@ -36,7 +36,7 @@ export default function Footer() {
                         <div className="footer__contactItems">
                             <p><Link to="contact" className="footer__contactItem">
                                 <p>2 Joppa Rd, Edinburgh, EH15 2EU</p>
-                                <p><img src={phoneimg} />0131 556 7901</p></Link></p>
+                                <p><img src={phoneimg} /><span>0131 556 7901</span></p></Link></p>
                             <p><Link to="contact" className="footer__contactItem">
                                 <p>2 Joppa Rd, Edinburgh, EH15 2EU</p>
                                 <p><img src={phoneimg} />01324 629 011</p></Link></p>
