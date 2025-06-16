@@ -1,7 +1,7 @@
-export default function Button ({text, path}) {
+export default function Button ({text, path, classname}) {
 return (
  
-<Link to={`/{path}`}> {text} </Link>
+<Link to={`/{path}`} classname={`button button__${classname}`}> {text} </Link>
 )
  
 }
