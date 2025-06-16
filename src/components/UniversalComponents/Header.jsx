@@ -10,9 +10,9 @@ export default function Header() {
             </section>
 
             <section className="header__navigation">
-                <Link to="/list" className="header__navigationItem">Shop</Link>
-                <Link to="/about" className="header__navigationItem">About us</Link>
-                <Link to="/contact" className="header__navigationItem">Contact us</Link>
+                <Link to="/list" className="header__navigation-item">Shop</Link>
+                <Link to="/about" className="header__navigation-item">About us</Link>
+                <Link to="/contact" className="header__navigation-item">Contact us</Link>
             </section>
         </header>
         </>
