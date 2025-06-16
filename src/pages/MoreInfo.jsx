@@ -1,7 +1,7 @@
 export default function MoreInfo() {
     return (
         <>
-        <h1 className="moreinfo__headline">FAQ</h1>
+        <h1 className="headline">FAQ</h1>
         <br/>
         <section className="moreinfo">
             <h2 className="moreinfo__subheadline">Here at HiFi Horizon, our trained product specialists aim to provide the right product for you. We take great care with all of our orders to ensure you are fully happy with the product.</h2>
