@@ -10,6 +10,10 @@
     background-color: $backgroundColor;
 }
 
+body{
+    font-family: "OpenSans", sans-serif;
+}
+
 #root{
     width: min(100%, 1200px);
     margin: 0 auto;
