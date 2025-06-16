@@ -1,4 +1,6 @@
 import Header from "../components/UniversalComponents/Header";
+import Intro from "../components/Home/Intro";
+import Newsletter from "../components/Home/Newsletter";
 
 export default function Home(){
 
@@ -11,6 +13,8 @@ export default function Home(){
 
         
         </section>
+        <Intro/>
+        <Newsletter/>
         </>
     )
 }
