@@ -10,6 +10,8 @@ export default function Home(){
         <>
         <section className="home">
         <h1 className="home__headline">Home</h1>
+
+        
         </section>
         <Intro/>
         <Newsletter/>
