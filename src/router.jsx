@@ -9,7 +9,7 @@ import Loading from "./components/loading";
 import AboutUs from "./pages/aBOUTuS.JSX";
 import { ErrorBoundary } from "./components/Error";
 import MoreInfo from "./pages/MoreInfo";
-// import { getUsers, getUser } from "./api/typicode";
+// import { getProducts, getProduct } from "./api/typicode";
 // import { handleSubmit } from "./api/actions";
 // import RequireAuth from "./components/RequireAuth";
 
@@ -23,7 +23,8 @@ const router = createBrowserRouter([
     errorElement: < ErrorBoundary />,
     children: [{
         index: true,
-        element: <Home />   
+        element: <Home />,
+        // loader: getProducts,
     },
     {
         path: "list",
@@ -31,12 +32,12 @@ const router = createBrowserRouter([
                 <List /> 
         )
         ,
-        // loader: getUsers,
+        // loader: getProducts,
     },
     {   
         path: "list/:id",
         element: <Details />,
-        // loader: getUser
+        // loader: getProduct
     },  
     {
         path: "contact",
