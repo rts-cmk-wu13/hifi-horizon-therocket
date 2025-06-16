@@ -92,6 +92,44 @@
     }
 }
 
-
+.productcard{
+    max-height: 339px;
+    max-width: 258px;
+    background-color: $whiteColor;
+    box-shadow: 2px 4px 4px 0 #00000024;
+    border-radius: 3px;
+    &__img-container{
+        // width: 100%;
+        margin: 45px 30px 11px 30px;
+        max-width: 198px;
+        height: 99px;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+    }
+    &__textbox{
+        font-family: "OpenSans", sans-serif;
+        font-family: 14px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 46px;
+    }
+    &__digital{
+        margin-top: 5px;
+        display: block;
+    }
+    &__price{
+        font-size: 24px;
+        margin: 0 auto;
+    }
+    &__footer-home{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
 
 
