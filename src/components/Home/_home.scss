@@ -6,3 +6,15 @@
         font-family: 'OpenSans', sans-serif;
     }
 }
+
+.homeproducts{
+    padding: 20px 38px 0 38px;
+    // background-color: ;
+    &__headline{
+        font-size: 24px;
+        font-family: "OpenSans", sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $headlineColor;
+    }
+}
