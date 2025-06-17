@@ -6,3 +6,33 @@
         font-family: 'OpenSans', sans-serif;
     }
 }
+
+.homeproducts{
+    padding: 20px 38px 0 38px;
+    // background-color: ;
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+    &__headline{
+        font-size: 24px;
+        font-family: "OpenSans", sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $headlineColor;
+    }
+    &__products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        gap: 30px;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 68px;
+    }
+}

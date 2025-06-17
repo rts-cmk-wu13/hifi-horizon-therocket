@@ -1,7 +1,9 @@
 import queryClient from "../QueryClient";
 import { redirect } from "react-router";
 
-export async function getUsers() {
+
+//produkter
+export async function getProducts() {
     // const token = sessionStorage.getItem("tokenLogin")
     // if (!token) redirect("/login")
 
@@ -17,8 +19,8 @@ export async function getUsers() {
     });
 }
 
-
-export async function getUser({ params }) {
+//product
+export async function getProduct({ params }) {
     console.log(params);
     const { id } = params;
 
@@ -33,3 +35,4 @@ export async function getUser({ params }) {
         }
     });
 }
+

@@ -1,10 +1,14 @@
-@use '../base.scss';
-@use '_critical';
-@use '_molecules';
-@use '_organisms';
-@use '/src/components/AboutUs/_aboutus';
-@use '/src/components/Contact/_contact';
-@use '/src/components/Details/_details';
-@use '/src/components/Home/_home';
-@use '/src/components/List/_list';
-@use '/src/components/MoreInfo/_moreinfo';
+
+@use '/src/base.scss';
+@use '/src/styles/critical';
+@use '/src/styles/molecules';
+@use '/src/styles/organisms';
+@use '/src/components/AboutUs/aboutus';
+@use '/src/components/Contact/contact';
+@use '/src/components/Details/details';
+@use '/src/components/Home/home';
+@use '/src/components/List/list';
+@use '/src/components/MoreInfo/moreinfo';
+@use '/src/components/Home/intro';
+@use '/src/components/Home/newsletter';
+
