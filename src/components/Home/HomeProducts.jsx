@@ -2,8 +2,10 @@
 import Button from "../UniversalComponents/Button";
 import ProductCard from "../UniversalComponents/ProductCard";
 
-export default function HomeProducts() {
-    // const products = useLoaderData()
+export default function HomeProducts({data}) {
+    const products = data.filter(item=> item.category === 'CDplayers')
+    // const products = data
+    console.log(products);
 
     return (
         <>
@@ -19,7 +21,17 @@ export default function HomeProducts() {
             </header>
 
             <section className="homeproducts__products">
-                <ProductCard
+                {products.map(item=>(
+                    <ProductCard
+                    key={item.id}
+                    title={item.name}
+                    price={item.price}
+                    Id={item.id}
+                    btnText="Read more"
+                    btnPath="details"
+                    />
+                ))}
+                {/* <ProductCard
                 pagefooter="home"
                 />
                 <ProductCard
@@ -30,7 +42,7 @@ export default function HomeProducts() {
                 />
                 <ProductCard
                 pagefooter="home"
-                />
+                /> */}
             </section>
         </section>
         </>
