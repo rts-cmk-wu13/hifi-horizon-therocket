@@ -16,30 +16,30 @@ export default function Footer() {
                 <div className="footer__primary">
                     <section className="footer__navigation">
 
-                        <p><Link to="Home" className="footer__navigationItem">Home</Link></p>
-                        <p><Link to="Shop" className="footer__navigationItem">Shop</Link></p>
-                        <p><Link to="AboutUs" className="footer__navigationItem">About</Link></p>
+                        <p className="footer__para"><Link to="Home" className="footer__navigationItem">Home</Link></p>
+                        <p className="footer__para"><Link to="Shop" className="footer__navigationItem">Shop</Link></p>
+                        <p className="footer__para"><Link to="AboutUs" className="footer__navigationItem">About</Link></p>
 
                     </section>
 
                     <section className="footer__moreinfo">
                         <div className="footer__moreinfoItems">
-                            <p><Link to="moreinfo" className="footer__moreinfoItem">Returns & Refunds</Link></p>
-                            <p><Link to="moreinfo" className="footer__moreinfoItem">Delivery</Link></p>
-                            <p><Link to="moreinfo" className="footer__moreinfoItem">Privacy Policy</Link></p>
-                            <p><Link to="moreinfo" className="footer__moreinfoItem">Terms & Conditions</Link></p>
+                            <p className="footer__para"><Link to="moreinfo" className="footer__moreinfoItem">Returns & Refunds</Link></p>
+                            <p className="footer__para"><Link to="moreinfo" className="footer__moreinfoItem">Delivery</Link></p>
+                            <p className="footer__para"><Link to="moreinfo" className="footer__moreinfoItem">Privacy Policy</Link></p>
+                            <p className="footer__para"><Link to="moreinfo" className="footer__moreinfoItem">Terms & Conditions</Link></p>
                         </div>
                     </section>
 
                     <section className="footer__contact">
                         <h3 className="footer__contactTitle">Contact</h3>
                         <div className="footer__contactItems">
-                            <p><Link to="contact" className="footer__contactItem">
-                                <p>2 Joppa Rd, Edinburgh, EH15 2EU</p>
-                                <p><img src={phoneimg} /><span>0131 556 7901</span></p></Link></p>
-                            <p><Link to="contact" className="footer__contactItem">
-                                <p>2 Joppa Rd, Edinburgh, EH15 2EU</p>
-                                <p><img src={phoneimg} />01324 629 011</p></Link></p>
+                            <p className="footer__para"><Link to="contact" className="footer__contactItem">
+                                <p className="footer__para">2 Joppa Rd, Edinburgh, EH15 2EU</p>
+                                <p className="footer__para"><img src={phoneimg} /><span>0131 556 7901</span></p></Link></p>
+                            <p className="footer__para"><Link to="contact" className="footer__contactItem">
+                                <p className="footer__para">2 Joppa Rd, Edinburgh, EH15 2EU</p>
+                                <p className="footer__para"><img src={phoneimg} />01324 629 011</p></Link></p>
                         </div>
                         <section className="footer__socials">
                             <div className="footer__socialsItems">

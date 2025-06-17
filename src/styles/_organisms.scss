@@ -1,36 +1,39 @@
 @use '_variables' as *;
 
 .footer {
-
+    
     background-color: $blackColor;
     padding: 20px;
     text-align: center;
     font-size: 14px;
     color: white;
 
-    p {
+    &__primary {
+        display: flex;
+    
+    }
+
+    &__para {
         margin-top: 1rem;
         padding: 0;
+        color: white;
+        text-decoration: none;
     }
 
-    &__logo {
-        width: 100px;
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-    &__links {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+    &__moreinfoItems {
+        margin-left: 10rem;
         gap: 20px;
+
+        p {
+            text-align: left;
+        }
 
         a {
             color: $backgroundColor;
             text-decoration: none;
 
             &:hover {
-                text-decoration: underline;
+                color: $buttonBackgroundColor;
             }
         }
     }
@@ -49,44 +52,13 @@
         }
     }
 
-    a {
-        color: $backgroundColor;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-
-        li {
-            display: inline;
-        }
-    }
-
-    &__primary {
-        display: flex;
-
-    }
-
-    &__moreinfoItems {
-        margin-left: 10rem;
-
-        p {
-            text-align: left;
-        }
-    }
 
     &__contactItems {
+        color: white;
         p {
             text-align: left;
         }
     }
-
     &__contactItem{
         img{
             margin-right: 1rem;
@@ -97,6 +69,15 @@
          }
     }
 
+    &__navigationItem{
+        color: $productCardBackground;
+        text-decoration: none;
+    }
+    &__navigationItem:hover{
+        color: $buttonBackgroundColor;
+    }
+
+
     &__contact {
         margin-left: 10rem;
         text-align: left;
@@ -105,7 +86,7 @@
     &__socialsItem {
         margin-left: 0.5rem;
         text-align: left;
-
+        
         img{
             margin-top: 1rem;
             margin-right: 1rem;
