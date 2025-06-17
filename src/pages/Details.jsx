@@ -8,7 +8,7 @@ export default function Detail(){
 
     return  (
         <>
-        <h2>DETAILS</h2>
+        <h1 className="headline">PRODUCT</h1>
         </>
     )
 }
