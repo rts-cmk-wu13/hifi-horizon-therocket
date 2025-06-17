@@ -1,5 +1,6 @@
+// universel - header + footer + logo + productcard
 
-@use '_variables' as *;
+@use '/src/styles/variables' as *;
 
 .footer {
     
@@ -110,9 +111,7 @@
     }
 }
 
-// universel - header + footer 
-@use './variables' as *;
-// universel - header + footer + logo
+
 
 .hifilogo{
     border: 1px solid $whiteColor;
