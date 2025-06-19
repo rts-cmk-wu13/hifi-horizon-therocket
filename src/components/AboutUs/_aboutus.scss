@@ -1,57 +1,81 @@
 @use '/src/styles/variables' as *;
 
 .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
 
-   .about__content {
+  .about__content {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     gap: 4rem;
 
     img {
-        max-width: 100%;
-        height: auto;
-        
+      width: 60%;
+      height: auto;
+      object-fit: cover;
     }
 
     div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      h2 {
         text-align: center;
-
-    h2 {
-        font-weight: bold;
         font-size: 1rem;
-       }
-    
-    span {
-    color: $orangeColor;
-    font-weight: bold;
-    margin-block: 0.5rem;
-    font-size: 0.8125rem;
-   }
-
-   p {
-    max-width: 29.5rem;
-    margin-block: 0.75rem;
-    font-size: 0.75rem;
-    line-height: 1.35;
-      
-      span {
-        font-weight: 600;
-        font-size: 0.75rem;
-        color: black;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
       }
 
-}
- }
+      span {
+        text-align: center;
+        color: $orangeColor;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+        font-size: 0.8125rem;
+      }
+
+      p {
+        font-size: 0.75rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+
+        span {
+          font-weight: 600;
+          color: black;
+        }
+      }
+    }
+
+    &.left {
+      flex-direction: row-reverse;
+    }
+
+    &.right {
+      flex-direction: row;
+    }
   }
-   }
+
+
+  @media (max-width: 768px) {
+    .about__content {
+      flex-direction: column;
+
+      img,
+      div {
+        width: 100%;
+      }
+
+      div {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}
