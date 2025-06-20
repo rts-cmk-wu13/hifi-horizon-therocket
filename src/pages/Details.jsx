@@ -7,7 +7,6 @@ export default function Detail(){
 
     return  (
         <>
-        <h2>DETAILS</h2>
 
         <Specifications/>
         </>

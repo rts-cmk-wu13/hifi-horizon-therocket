@@ -1,14 +1,97 @@
 export default function Specifications() {
   return (
     <>
-        <h2>Product Specifications</h2>
+        <h2 className="headline">Product Specifications</h2>
         
-        <ul>
-            <li>yo</li>
-            <li>yo</li>
-            <li>yo</li> 
-            
-        </ul>
+       <table class="spec-table">
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+
+  
+  
+</table>
     </>
   );
 }
