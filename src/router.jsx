@@ -10,6 +10,7 @@ import AboutUs from "./pages/aBOUTuS.JSX";
 import { ErrorBoundary } from "./components/Error";
 import MoreInfo from "./pages/MoreInfo";
 import { getProducts, getProduct } from "./api/typicode";
+import Login from "./pages/Login";
 // import { handleSubmit } from "./api/actions";
 // import RequireAuth from "./components/RequireAuth";
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
         loader: getProducts,
+    },
+    {
+        path: "login",
+        element: <Login /> 
     },
     {
         path: "list",
