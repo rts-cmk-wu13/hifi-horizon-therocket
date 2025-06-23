@@ -7,7 +7,7 @@ import { useState } from 'react';
 export default function LoginToAccount() {
 
     const [error, setError] = useState(null);
-    //const { login } = useAuth();
+   //const { login } = useAuth();
     const location = useLocation();
     const navigate = useNavigate();
     const from = location.state?.from?.pathname || '/';
@@ -18,15 +18,16 @@ export default function LoginToAccount() {
         formData.delete('repeatpassword'); // Remove repeat password from form data
         const data = Object.fromEntries(formData.entries());
         console.log(data);
-        const response = await fetch('http://localhost:4000/login', {
+     //   const response = await fetch('http://localhost:4000/login', {
 
-            // const response = await fetch('https://hifi-api-pzft.onrender.com/register', {
+         const response = await fetch('https://hifi-api-pzft.onrender.com/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(data),
         });
+
         const result = await response.json();
         console.log(result);
         if (!response.ok) {
@@ -36,7 +37,8 @@ export default function LoginToAccount() {
             console.error('Login failed:', result);
             return;
         }
-        login(result.accessToken);
+        setError(result.message || 'Login successful');
+        //login(result.accessToken);
         navigate(from, { replace: true }); // Redirect to the previous page or home
 
     }
