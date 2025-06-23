@@ -1,15 +1,14 @@
 import { useParams } from "react-router"
+import Specifications from "../components/Specifications";
 
 export default function Detail(){
 
     const {id}= useParams();
-    console.log(id)
-
- 
 
     return  (
         <>
-        <h1 className="headline">PRODUCT</h1>
+
+        <Specifications/>
         </>
     )
 }

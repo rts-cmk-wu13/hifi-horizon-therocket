@@ -10,6 +10,7 @@ import AboutUs from "./pages/aBOUTuS.JSX";
 import { ErrorBoundary } from "./components/Error";
 import MoreInfo from "./pages/MoreInfo";
 import { getProducts, getProduct } from "./api/typicode";
+import Compare from "./pages/Compare";
 // import { handleSubmit } from "./api/actions";
 // import RequireAuth from "./components/RequireAuth";
 
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
         path: "moreinfo",
         element: <MoreInfo />,
         // action: handleSubmit,
+    },
+    {
+        path: "compare",
+        element: <Compare />,
     },
     {   
         path: "*",
