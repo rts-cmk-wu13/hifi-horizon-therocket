@@ -1,0 +1,150 @@
+@use '/src/styles/variables' as *;
+
+
+.product__details {
+    padding: 2rem;
+    max-width: 31.5rem;
+   
+    h2 {
+        font-weight: bold;
+        color: $blackColor;
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 1.25rem;
+        margin-block-end: 1rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+        margin-block-end: 1rem; 
+    }
+}
+
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  width: 1.68rem;
+  height: 1.68rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border 0.2s ease-in-out;
+  display: inline-block;
+  vertical-align: middle;
+
+  &.radio__black {
+    background-color: $blackColor;
+  }
+
+
+  &.radio__silver {
+   background: linear-gradient(rgb(92, 92, 92), rgb(146, 146, 146, 0));
+  }
+
+  &.radio__gold {
+     background: linear-gradient(rgb(212, 165, 8), rgb(146, 146, 146, 0));
+  }
+
+  &:checked {
+    &:checked {
+    box-shadow: 0 0 0 2px $whiteColor, 0 0 0 4px $blackColor; 
+    border: none;
+  }
+  }
+
+}
+
+.radio__group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-block: 2rem 1rem;
+
+  label {
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+}
+
+.product__price {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .instock {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  .instock__dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 0.5rem;
+  }
+
+    .currency {
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+}
+
+.price {
+    font-size: 1.5rem;
+}
+
+.product__btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-block-start: 1.5rem;
+
+     .button {
+        padding: 0.75rem 8rem;
+     }
+}
+
+.counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+
+   .value {
+    font-size: 0.875rem;
+    font-weight: 400;
+   }
+}
+
+.counter button {
+  all: unset;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.counter .value {
+  text-align: center;
+}

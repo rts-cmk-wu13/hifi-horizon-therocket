@@ -4,7 +4,7 @@ export default function About() {
     <>
       <section className="about">
         <article className="about__content right">
-            <img src="/public/img/about/about_img-1.png">
+            <img src="/img/about/about_img-1.png">
             </img>
             <div>
             <h2>History</h2>
@@ -36,11 +36,11 @@ export default function About() {
                 Our experts are on hand to guide you through the differences between speakers, amplifiers and sources and provide simple solutions that suit your needs
             </p>
             </div>
-            <img src="/public/img/about/about_img-2.png">
+            <img src="/img/about/about_img-2.png">
             </img>      
             </article> 
             <article className="about__content right">
-            <img src="/public/img/about/about_img-3.png">
+            <img src="/img/about/about_img-3.png">
             </img>
             <div>
             <h2>Services</h2>
@@ -78,7 +78,7 @@ export default function About() {
                One of our biggest pleasures of working in this industry is to see the smile on our customers’ faces when they finally hear and see the system of their dreams.   
             </p>
             </div>
-            <img src="/public/img/about/about_img-4.png">
+            <img src="/img/about/about_img-4.png">
             </img>      
             </article> 
       </section>
