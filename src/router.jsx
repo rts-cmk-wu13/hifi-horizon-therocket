@@ -9,10 +9,11 @@ import Loading from "./components/loading";
 import AboutUs from "./pages/AboutUs";
 import { ErrorBoundary } from "./components/Error";
 import MoreInfo from "./pages/MoreInfo";
+
+import Signup from "./pages/SignUp";
+
 import { getProducts, getProduct } from "./api/typicode";
 import Login from "./pages/Login";
-// import { handleSubmit } from "./api/actions";
-// import RequireAuth from "./components/RequireAuth";
 
 
 
@@ -47,6 +48,11 @@ const router = createBrowserRouter([
     {
         path: "contact",
         element: <Contact />,
+        // action: handleSubmit,
+    },
+    {
+        path: "signup",
+        element: <Signup />,
         // action: handleSubmit,
     },
     {
