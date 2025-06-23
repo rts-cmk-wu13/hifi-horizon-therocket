@@ -1,9 +1,11 @@
 // import { useLoaderData } from "react-router"
+import { useLoaderData } from "react-router";
 import Button from "../UniversalComponents/Button";
 import ProductCard from "../UniversalComponents/ProductCard";
 
 export default function HomeProducts() {
-    // const products = useLoaderData()
+    const products = useLoaderData()
+    console.log(products);
 
     return (
         <>
