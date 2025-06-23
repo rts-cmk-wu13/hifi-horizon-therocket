@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <>
         
-        <h1>Contact</h1>
+        <h1 className="headline">Contact</h1>
 
         <Form method="post" >
             <div className="form-group">

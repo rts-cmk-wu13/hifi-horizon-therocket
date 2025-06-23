@@ -1,12 +1,11 @@
 import Button from "./Button";
 
-export default function ProductCard({headertext, headericon, title, digital, price, pagefooter}) {
+export default function ProductCard({headertext, headericon, title, price, pagefooter, Id, btnText, btnPath}) {
     return (
         <>
         
         <article className="productcard">
 
-            
             <header className="productcard__header">
                 <p className="productcard__header-text">{headertext}</p>
                 <span>{headericon}</span>
@@ -19,7 +18,7 @@ export default function ProductCard({headertext, headericon, title, digital, pri
                 <p className="productcard__textbox">
                     {title}
                     <span className="productcard__digital">
-                        {digital}
+                        (Digital Output)
                     </span>
                 </p>
                 <span className="productcard__price">
@@ -29,12 +28,13 @@ export default function ProductCard({headertext, headericon, title, digital, pri
 
             <footer className={`productcard__footer-${pagefooter}`}>
             <Button 
-            text="Read more"
-            path="/details"
-            // productId={productId}
+            text={btnText}
+            path={btnPath}
+            productId={Id}
             classname="productcard"
             />
             </footer>
+
         </article>
         </>
     )
