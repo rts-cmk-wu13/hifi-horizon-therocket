@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import Layout from "./Layout";
 import Home from "./pages/Home";
+import User from "./pages/User";
 import List from "./pages/List";    
 import Details from "./pages/Details";
 import Contact from "./pages/Contact"; 
@@ -34,6 +35,13 @@ const router = createBrowserRouter([
         ,
         loader: getProducts,
     },
+
+      {   
+        path: "user",
+        element: <User />,
+        // loader: getProduct
+    },  
+
     {   
         path: "details/:id",
         element: <Details />,
