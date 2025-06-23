@@ -9,10 +9,11 @@ import Loading from "./components/loading";
 import AboutUs from "./pages/AboutUs";
 import { ErrorBoundary } from "./components/Error";
 import MoreInfo from "./pages/MoreInfo";
+
 import Signup from "./pages/SignUp";
-// import { getProducts, getProduct } from "./api/typicode";
-// import { handleSubmit } from "./api/actions";
-// import RequireAuth from "./components/RequireAuth";
+
+import { getProducts, getProduct } from "./api/typicode";
+import Login from "./pages/Login";
 
 
 
@@ -25,7 +26,11 @@ const router = createBrowserRouter([
     children: [{
         index: true,
         element: <Home />,
-        // loader: getProducts,
+        loader: getProducts,
+    },
+    {
+        path: "login",
+        element: <Login /> 
     },
     {
         path: "list",
@@ -33,10 +38,10 @@ const router = createBrowserRouter([
                 <List /> 
         )
         ,
-        // loader: getProducts,
+        loader: getProducts,
     },
     {   
-        path: "list/:id",
+        path: "details/:id",
         element: <Details />,
         // loader: getProduct
     },  
