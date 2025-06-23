@@ -1,0 +1,97 @@
+export default function Specifications() {
+  return (
+    <>
+        <h2 className="headline">Product Specifications</h2>
+        
+       <table class="spec-table">
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+  <tr>
+    <td>xxxxxxxx</td>
+    <td>xxxxxxx</td>
+  </tr>
+
+  
+  
+</table>
+    </>
+  );
+}
