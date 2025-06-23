@@ -9,15 +9,12 @@ export default function List() {
 
   return (
     <>
-<<<<<<< HEAD
-=======
       <section className="list">
         <ListNavigation />
       
         <ProductRendering data={products} />
       </section>
         <Chat />
->>>>>>> f434a119a4a6f1ca3e28ae4103fd1f1711080fc3
 
     </>
   );

@@ -12,12 +12,8 @@ export default function Detail(){
 
     return  (
         <>
-<<<<<<< HEAD
-        <h2>DETAILS</h2>
-           <ProductDetails />
-=======
+        <ProductDetails/>
         <h1 className="headline">PRODUCT</h1>
->>>>>>> f434a119a4a6f1ca3e28ae4103fd1f1711080fc3
         </>
     )
 }
