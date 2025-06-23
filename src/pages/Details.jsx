@@ -1,5 +1,9 @@
 import { useParams } from "react-router"
-import Specifications from "../components/Specifications";
+import Specifications from "../components/Details/specifications";
+import ProductDetails from "../components/Details/Product-details";
+
+
+
 
 export default function Detail(){
 
@@ -8,7 +12,10 @@ export default function Detail(){
     return  (
         <>
 
+
         <Specifications/>
+        <ProductDetails/>
+        <h1 className="headline">PRODUCT</h1>
         </>
     )
 }
