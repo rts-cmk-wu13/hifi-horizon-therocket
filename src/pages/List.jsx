@@ -1,14 +1,25 @@
-import ProductDetails from "../components/Details/Product-details";
+
 
 
 export default function List() {
 
+import ListNavigation from "../components/List/ListNavigation";
+import ProductRendering from "../components/List/ProductRendering";
+import { useLoaderData } from "react-router";
+import Chat from "../components/List/Chat"; 
 
+export default function List() {
+  const products = useLoaderData();
 
   return (
     <>
-   <ProductDetails />
+      <section className="list">
+        <ListNavigation />
+      
+        <ProductRendering data={products} />
+      </section>
+        <Chat />
+
     </>
   );
 }
-

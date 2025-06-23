@@ -3,12 +3,13 @@ import { useParams } from "react-router"
 export default function Detail(){
 
     const {id}= useParams();
+    console.log(id)
 
  
 
     return  (
         <>
-        <h2>DETAILS</h2>
+        <h1 className="headline">PRODUCT</h1>
         </>
     )
 }

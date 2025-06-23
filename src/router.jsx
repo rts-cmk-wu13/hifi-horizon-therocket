@@ -9,7 +9,7 @@ import Loading from "./components/loading";
 import AboutUs from "./pages/aBOUTuS.JSX";
 import { ErrorBoundary } from "./components/Error";
 import MoreInfo from "./pages/MoreInfo";
-// import { getProducts, getProduct } from "./api/typicode";
+import { getProducts, getProduct } from "./api/typicode";
 // import { handleSubmit } from "./api/actions";
 // import RequireAuth from "./components/RequireAuth";
 
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     children: [{
         index: true,
         element: <Home />,
-        // loader: getProducts,
+        loader: getProducts,
     },
     {
         path: "list",
@@ -32,10 +32,10 @@ const router = createBrowserRouter([
                 <List /> 
         )
         ,
-        // loader: getProducts,
+        loader: getProducts,
     },
     {   
-        path: "list/:id",
+        path: "details/:id",
         element: <Details />,
         // loader: getProduct
     },  
