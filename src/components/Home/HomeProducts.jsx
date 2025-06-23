@@ -1,10 +1,8 @@
-// import { useLoaderData } from "react-router"
-import { useLoaderData } from "react-router";
 import Button from "../UniversalComponents/Button";
 import ProductCard from "../UniversalComponents/ProductCard";
 
-export default function HomeProducts() {
-    const products = useLoaderData()
+export default function HomeProducts({data}) {
+    const products = data.filter(item=> item.category === 'CDplayers')
     console.log(products);
 
     return (
@@ -21,18 +19,17 @@ export default function HomeProducts() {
             </header>
 
             <section className="homeproducts__products">
-                <ProductCard
-                pagefooter="home"
-                />
-                <ProductCard
-                pagefooter="home"
-                />
-                <ProductCard
-                pagefooter="home"
-                />
-                <ProductCard
-                pagefooter="home"
-                />
+                {products.map(item=>(
+                    <ProductCard
+                    key={item.id}
+                    title={item.name}
+                    price={item.price}
+                    Id={item.id}
+                    btnText="Read more"
+                    btnPath="details"
+                    />
+                ))}
+
             </section>
         </section>
         </>

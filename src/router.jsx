@@ -6,7 +6,7 @@ import Details from "./pages/Details";
 import Contact from "./pages/Contact"; 
 import NotFound from "./pages/NotFound";
 import Loading from "./components/loading";
-import AboutUs from "./pages/aBOUTuS.JSX";
+import AboutUs from "./pages/AboutUs";
 import { ErrorBoundary } from "./components/Error";
 import MoreInfo from "./pages/MoreInfo";
 import { getProducts, getProduct } from "./api/typicode";
@@ -32,10 +32,10 @@ const router = createBrowserRouter([
                 <List /> 
         )
         ,
-        // loader: getProducts,
+        loader: getProducts,
     },
     {   
-        path: "list/:id",
+        path: "details/:id",
         element: <Details />,
         // loader: getProduct
     },  

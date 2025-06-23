@@ -1,5 +1,117 @@
-@use './variables' as *;
-// universel - header + footer + logo
+// universel - header + footer + logo + productcard
+
+@use '/src/styles/variables' as *;
+
+.footer {
+    
+    background-color: $blackColor;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+
+    &__primary {
+        display: flex;
+    
+    }
+
+    &__para {
+        margin-top: 1rem;
+        padding: 0;
+        color: white;
+        text-decoration: none;
+    }
+
+    &__moreinfoItems {
+        margin-left: 10rem;
+        gap: 20px;
+
+        p {
+            text-align: left;
+        }
+
+        a {
+            color: $backgroundColor;
+            text-decoration: none;
+
+            &:hover {
+                color: $buttonBackgroundColor;
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        a {
+            color: $backgroundColor;
+
+            &:hover {
+                color: lighten($backgroundColor, 20%);
+            }
+        }
+    }
+
+
+    &__contactItems {
+        color: white;
+        p {
+            text-align: left;
+        }
+    }
+    &__contactItem{
+        img{
+            margin-right: 1rem;
+         }
+         span{
+            padding-bottom: 10px;
+           
+         }
+    }
+
+    &__navigationItem{
+        color: $productCardBackground;
+        text-decoration: none;
+    }
+    &__navigationItem:hover{
+        color: $buttonBackgroundColor;
+    }
+
+
+    &__contact {
+        margin-left: 10rem;
+        text-align: left;
+    }
+
+    &__socialsItem {
+        margin-left: 0.5rem;
+        text-align: left;
+        
+        img{
+            margin-top: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__socials {
+        margin-left: 0;
+    }
+
+    &__secondary {
+        text-align: left;
+        margin-top: 20px;
+
+        img {
+            margin-right: 1rem;
+        }
+
+    }
+}
+
+
 
 .hifilogo{
     border: 1px solid $whiteColor;
@@ -10,6 +122,8 @@
 
     display: flex;
     align-items: end;
+
+    cursor: pointer;
     &__textbox{
         padding-left: 0.2em;
         padding-bottom: 0.1em;
@@ -39,7 +153,10 @@
         gap: 51px;
     }
 
-
+    // &__logo-link{
+    //     text-decoration: none;
+    //     color: white;
+    // }
     &__navigation{
         display: flex;
         gap: 32px;
@@ -131,5 +248,6 @@
         justify-content: center;
     }
 }
+
 
 
