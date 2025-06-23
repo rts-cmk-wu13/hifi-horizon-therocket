@@ -22,7 +22,9 @@ export default function Header() {
         <header className="header">
             <section className="header__left">
                 <section className="header__logo">
-                <HifiLogo/>
+                    <Link to="/" className="header__logo-link">
+                        <HifiLogo/>
+                    </Link>
                 </section>
 
                 <section className="header__navigation">
