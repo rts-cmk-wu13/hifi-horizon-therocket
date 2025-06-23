@@ -34,12 +34,12 @@ export default function Footer() {
                     <section className="footer__contact">
                         <h3 className="footer__contactTitle">Contact</h3>
                         <div className="footer__contactItems">
-                            <p className="footer__para"><Link to="contact" className="footer__contactItem">
+                            <div className="footer__para"><Link to="contact" className="footer__contactItem">
                                 <p className="footer__para">2 Joppa Rd, Edinburgh, EH15 2EU</p>
-                                <p className="footer__para"><img src={phoneimg} /><span>0131 556 7901</span></p></Link></p>
-                            <p className="footer__para"><Link to="contact" className="footer__contactItem">
+                                <p className="footer__para"><img src={phoneimg} /><span>0131 556 7901</span></p></Link></div>
+                            <div className="footer__para"><Link to="contact" className="footer__contactItem">
                                 <p className="footer__para">2 Joppa Rd, Edinburgh, EH15 2EU</p>
-                                <p className="footer__para"><img src={phoneimg} />01324 629 011</p></Link></p>
+                                <p className="footer__para"><img src={phoneimg} />01324 629 011</p></Link></div>
                         </div>
                         <section className="footer__socials">
                             <div className="footer__socialsItems">
