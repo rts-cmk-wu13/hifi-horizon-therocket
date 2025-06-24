@@ -7,12 +7,14 @@ import Details from "./pages/Details";
 import Contact from "./pages/Contact"; 
 import NotFound from "./pages/NotFound";
 import Loading from "./components/loading";
-import AboutUs from "./pages/aBOUTuS.JSX";
+import AboutUs from "./pages/AboutUs";
 import { ErrorBoundary } from "./components/Error";
 import MoreInfo from "./pages/MoreInfo";
+
+import Signup from "./pages/SignUp";
+
 import { getProducts, getProduct } from "./api/typicode";
-// import { handleSubmit } from "./api/actions";
-// import RequireAuth from "./components/RequireAuth";
+import Login from "./pages/Login";
 
 
 
@@ -26,6 +28,10 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
         loader: getProducts,
+    },
+    {
+        path: "login",
+        element: <Login /> 
     },
     {
         path: "list",
@@ -50,6 +56,11 @@ const router = createBrowserRouter([
     {
         path: "contact",
         element: <Contact />,
+        // action: handleSubmit,
+    },
+    {
+        path: "signup",
+        element: <Signup />,
         // action: handleSubmit,
     },
     {
