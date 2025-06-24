@@ -1,10 +1,8 @@
-// import { useLoaderData } from "react-router"
 import Button from "../UniversalComponents/Button";
 import ProductCard from "../UniversalComponents/ProductCard";
 
 export default function HomeProducts({data}) {
     const products = data.filter(item=> item.category === 'CDplayers')
-    // const products = data
     console.log(products);
 
     return (
@@ -31,18 +29,7 @@ export default function HomeProducts({data}) {
                     btnPath="details"
                     />
                 ))}
-                {/* <ProductCard
-                pagefooter="home"
-                />
-                <ProductCard
-                pagefooter="home"
-                />
-                <ProductCard
-                pagefooter="home"
-                />
-                <ProductCard
-                pagefooter="home"
-                /> */}
+
             </section>
         </section>
         </>

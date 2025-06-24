@@ -3,7 +3,7 @@ export default function Specifications() {
     <>
         <h2 className="headline">Product Specifications</h2>
         
-       <table class="spec-table">
+       <table className="spec-table">
   <tr>
     <td>xxxxxxxx</td>
     <td>xxxxxxx</td>
