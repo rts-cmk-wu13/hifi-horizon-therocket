@@ -2,6 +2,7 @@ import ListNavigation from "../components/List/ListNavigation";
 import ProductRendering from "../components/List/ProductRendering";
 import { useLoaderData } from "react-router";
 import Chat from "../components/List/Chat"; 
+import DropdownMenu from "../components/List/DropdownMenu";
 
 
 export default function List() {
@@ -11,7 +12,6 @@ export default function List() {
     <>
       <section className="list">
         <ListNavigation />
-      
         <ProductRendering data={products} />
       </section>
         <Chat />
