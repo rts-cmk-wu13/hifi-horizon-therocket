@@ -12,7 +12,7 @@ export default function Newsletter() {
         <form onSubmit={validateNewsletterForm} noValidate>
           <input type="email" name="email" required />
           <span className="error"></span>
-          <button type="submit">Sign up</button>
+          <button type="submit" className="button">Sign up</button>
         </form>
       </section>
       <dialog className="dialog" id="contact__dialog">
