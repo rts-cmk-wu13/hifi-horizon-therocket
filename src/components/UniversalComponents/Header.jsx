@@ -48,7 +48,7 @@ export default function Header() {
                     </div>
                 </form>
                 <section className="header__link-icons">
-                    <Link to="/user">
+                    <Link to="/login">
                     <FaUser className="header__profile-icon"/>
                     </Link>
                     <Link to="/basket">
