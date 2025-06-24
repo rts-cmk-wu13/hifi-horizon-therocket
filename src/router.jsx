@@ -9,10 +9,17 @@ import Loading from "./components/loading";
 import AboutUs from "./pages/AboutUs";
 import { ErrorBoundary } from "./components/Error";
 import MoreInfo from "./pages/MoreInfo";
+
 import Signup from "./pages/SignUp";
+<<<<<<< HEAD
 // import { getProducts, getProduct } from "./api/typicode";
 import { handleSignUp } from "./api/signupActions";
 // import RequireAuth from "./components/RequireAuth";
+=======
+
+import { getProducts, getProduct } from "./api/typicode";
+import Login from "./pages/Login";
+>>>>>>> 2af30d23f9544b206b184e46d53451b0c0bed3d8
 
 
 
@@ -25,7 +32,11 @@ const router = createBrowserRouter([
     children: [{
         index: true,
         element: <Home />,
-        // loader: getProducts,
+        loader: getProducts,
+    },
+    {
+        path: "login",
+        element: <Login /> 
     },
     {
         path: "list",
@@ -33,10 +44,10 @@ const router = createBrowserRouter([
                 <List /> 
         )
         ,
-        // loader: getProducts,
+        loader: getProducts,
     },
     {   
-        path: "list/:id",
+        path: "details/:id",
         element: <Details />,
         // loader: getProduct
     },  
