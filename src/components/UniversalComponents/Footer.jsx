@@ -16,7 +16,7 @@ export default function Footer() {
                 <div className="footer__primary">
                     <section className="footer__navigation">
 
-                        <p className="footer__para"><Link to="Home" className="footer__navigationItem">Home</Link></p>
+                        <p className="footer__para"><Link to="/" className="footer__navigationItem">Home</Link></p>
                         <p className="footer__para"><Link to="Shop" className="footer__navigationItem">Shop</Link></p>
                         <p className="footer__para"><Link to="AboutUs" className="footer__navigationItem">About</Link></p>
 
