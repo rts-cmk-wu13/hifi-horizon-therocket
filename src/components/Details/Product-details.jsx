@@ -1,8 +1,10 @@
-export default function ProductDetails() {
+export default function ProductDetails({ product }) {
+  console.log(product);
   return (
     <section className="product__details">  
-      <h2>Auralic Aries G2.1 Streamer</h2>
+      <h2>{product.name}</h2>
       <h3>(Digital Output)</h3>
+      <p>{product.description}</p>
       <p>
         G2.1 is the next logical evolutionary step, resulting from a desire to improve upon the original G2 series. At AURALiC, we always work to create a new approach to digital music that pushes the boundaries of sonic quality. Incorporating state-of-the-art technologies and delivered with innovative features, G2.1 is built for ultimate levels of sonic performance
       </p>
@@ -25,7 +27,7 @@ export default function ProductDetails() {
         </div>
       </div>
       <div className="product__price">
-        <span className="price">£ 4,799.00</span>
+        <span className="price">{product.price}</span>
         <span className="instock">In stock <div className="instock__dot"></div></span>
       </div>
 
