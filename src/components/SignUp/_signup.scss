@@ -8,6 +8,8 @@
         width: 80%;
         background-color: white;
         margin-left: 2rem;
+        margin-top: 4rem;
+
         label {
             display: block;        /* Makes the label take full width, pushing input to next line */
             margin-bottom: 6px;    /* Space between label and input */
@@ -47,6 +49,11 @@
             }
         }
         
+        &__form-group--checkbox{
+            display: flex;
+           flex-direction: row;
+        }
+
         button {
             align-self: flex-end;
             padding: 0.5rem 1rem;

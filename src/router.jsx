@@ -16,6 +16,9 @@ import { ErrorBoundary } from "./components/Error";
 import MoreInfo from "./pages/MoreInfo";
 
 import Signup from "./pages/SignUp";
+// import { getProducts, getProduct } from "./api/typicode";
+import { handleSignUp } from "./api/signupActions";
+// import RequireAuth from "./components/RequireAuth";
 
 import { getProducts, getProduct } from "./api/typicode";
 
@@ -70,7 +73,7 @@ const router = createBrowserRouter([
  {
         path: "signup",
         element: <Signup />,
-        // action: handleSubmit,
+        action: handleSignUp,
     },
         {
             path: "about",
