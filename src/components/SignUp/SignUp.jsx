@@ -8,41 +8,6 @@ import { useActionData } from 'react-router';
 export default function CreateAccount() {
     const errors = useActionData();
 
-    // const [error, setError] = useState(null);
-    // const { login } = useAuth();
-    // const location = useLocation();
-    // const navigate = useNavigate();
-    // const from = location.state?.from?.pathname || '/';
-
-    // async function handleLogin(event) {
-    //     event.preventDefault();
-    //     const formData = new FormData(event.target);
-    //     // formData.delete('repeatpassword'); // Remove repeat password from form data
-    //     const data = Object.fromEntries(formData.entries());
-    //     console.log(data);
-    //     //const response = await fetch('http://localhost:4000/register', {
-
-    //      const response = await fetch('https://hifi-api-pzft.onrender.com/register', {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify(data),
-    //     });
-    //     const result = await response.json();
-    //     console.log(result);
-    //     if (!response.ok) {
-    //         // Handle error, e.g., show a message to the user
-    //         //throw new Error('Login failed');
-    //         setError(result.message || 'Signup failed');
-    //         console.error('Signup failed:', result);
-    //         return;
-    //     }
-    //     // login(result.accessToken);
-    //     navigate(from, { replace: true }); // Redirect to the previous page or home
-
-    // }
-
     return (
         <div className="signupcontainer">
             <h2>Create New Customer Account</h2>

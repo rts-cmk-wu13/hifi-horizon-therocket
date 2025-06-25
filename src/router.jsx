@@ -11,15 +11,12 @@ import { ErrorBoundary } from "./components/Error";
 import MoreInfo from "./pages/MoreInfo";
 
 import Signup from "./pages/SignUp";
-<<<<<<< HEAD
 // import { getProducts, getProduct } from "./api/typicode";
 import { handleSignUp } from "./api/signupActions";
 // import RequireAuth from "./components/RequireAuth";
-=======
 
 import { getProducts, getProduct } from "./api/typicode";
 import Login from "./pages/Login";
->>>>>>> 2af30d23f9544b206b184e46d53451b0c0bed3d8
 
 
 
