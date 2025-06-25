@@ -10,8 +10,12 @@ export default function Detail(){
     const product = useLoaderData();
     console.log(product);
 
+
+    const {id}= useParams();
+
     // const {id}= useParams();
     // console.log(id)
+
 
     return  (
         <>
