@@ -1,24 +1,40 @@
 import { createBrowserRouter } from "react-router";
 import Layout from "./Layout";
 import Home from "./pages/Home";
-import List from "./pages/List";
+
+import User from "./pages/User";
+import List from "./pages/List";    
+
 import Details from "./pages/Details";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Loading from "./components/loading";
-import AboutUs from "./pages/AboutUs.JSX";
+
+import AboutUs from "./pages/AboutUs";
+
 import { ErrorBoundary } from "./components/Error";
 import MoreInfo from "./pages/MoreInfo";
+
+import Signup from "./pages/SignUp";
+
 import { getProducts, getProduct } from "./api/typicode";
+
 import Login from "./pages/Login";
 import { handleLogin } from "./api/loginActions";
+
+import Compare from "./pages/Compare";
+
 // import { handleSubmit } from "./api/actions";
 // import RequireAuth from "./components/RequireAuth";
+
+import Login from "./pages/Login";
+
 
 
 
 const router = createBrowserRouter([
     {
+
         path: "/",
         element: <Layout />,
         hydrateFallbackElement: < Loading />,
@@ -44,13 +60,18 @@ const router = createBrowserRouter([
         {
             path: "details/:id",
             element: <Details />,
-            // loader: getProduct
+            loader: getProduct
         },
         {
             path: "contact",
             element: <Contact />,
             // action: handleSubmit,
         },
+ {
+        path: "signup",
+        element: <Signup />,
+        // action: handleSubmit,
+    },
         {
             path: "about",
             element: <AboutUs />,
@@ -61,11 +82,14 @@ const router = createBrowserRouter([
             element: <MoreInfo />,
             // action: handleSubmit,
         },
+ {
+        path: "compare",
+        element: <Compare />,
+    },
         {
             path: "*",
             element: < NotFound />
-        }
-        ]
+
     }
 
 ]);

@@ -1,20 +1,40 @@
 import { useParams } from "react-router"
+import Specifications from "../components/Details/specifications";
 import ProductDetails from "../components/Details/Product-details";
+import { useLoaderData } from "react-router";
+import Carousel from "../components/Details/Carousel";
 
 
 
 export default function Detail(){
+    const product = useLoaderData();
+    console.log(product);
+
 
     const {id}= useParams();
-    console.log(id)
 
- 
+    // const {id}= useParams();
+    // console.log(id)
+
 
     return  (
         <>
-        <ProductDetails/>
-        <h1 className="headline">PRODUCT</h1>
+
+        <h1 className="headline">PRODUCT</h1>   
+
+        <section className="details">
+
+        <section className="details__top">
+        <Carousel product={product}/>
+        <ProductDetails product={product}/>
+        </section>
+
+        <Specifications product={product} />
+
+        </section>
+        
         </>
     )
 }
+
 
