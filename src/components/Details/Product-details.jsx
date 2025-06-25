@@ -30,10 +30,10 @@ export default function ProductDetails() {
       </div>
 
       <div className="product__btns">
-        <div class="counter">
-  <button class="decrement">−</button>
-  <span class="value">1</span>
-  <button class="increment">+</button>
+        <div className="counter">
+  <button className="decrement">−</button>
+  <span className="value">1</span>
+  <button className="increment">+</button>
 </div>
 
         <button className="cartBtn button">Add to Cart</button>
