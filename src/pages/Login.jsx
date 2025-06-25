@@ -1,16 +1,13 @@
 import LoginToAccount from "../components/Login/Login";
 
 
+export default function Login() {
 
-export default function Login(){
-  
-
-
-    return(
+    return (
         <>
-        <section className="login">
-    <LoginToAccount/>
-        </section>
+            <section className="login">
+                <LoginToAccount />
+            </section>
         </>
     )
 }

@@ -47,6 +47,7 @@ export default function Header() {
           </Link>
         </section>
 
+
         <section className="header__navigation">
           <div 
             className="header__navigation-dropdown" 
@@ -98,3 +99,4 @@ export default function Header() {
     </header>
   );
 }
+
