@@ -35,7 +35,7 @@ export const handleSubmit = async ({ request }) => {
     }
 
 
-    return redirect("/tak")
+    return redirect("/")
 
 
 

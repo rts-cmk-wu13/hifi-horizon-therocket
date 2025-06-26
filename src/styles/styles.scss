@@ -1,3 +1,4 @@
+
 @use '/src/base.scss';
 @use '/src/styles/critical';
 @use '/src/styles/molecules';
@@ -8,3 +9,14 @@
 @use '/src/components/Home/home';
 @use '/src/components/List/list';
 @use '/src/components/MoreInfo/moreinfo';
+@use '/src/components/Home/intro';
+@use '/src/components/Home/newsletter';
+@use '/src/components/List/chat';
+@use '/src/components/Details/productcompare';
+@use '/src/components/SignUp/signup';
+@use '/src/components/Details/specification';
+@use '/src/components/Details/productDetails';
+@use '/src/components/Login/login';
+@use '/src/components/User/user';
+@use '/src/components/List/dropdown';
+

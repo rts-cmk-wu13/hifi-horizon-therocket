@@ -1,1 +1,105 @@
 @use '/src/styles/variables' as *;
+
+.details{
+
+    &__top{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media screen and (max-width:768px) {
+            grid-template-columns: 1fr;
+            
+        }
+    }
+}
+
+//carousel
+.carousel{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+
+    margin: 0 auto;
+    &__container{
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        // width: 100%;
+        max-width: 519px;
+        margin-top: 247px;
+    }
+    &__slides{
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+        max-width: 337px;
+    }
+    &__slide{
+        min-width: 100%;
+        margin: 0;
+        height: 182px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+    &__img{
+        width: 100%;
+        object-fit: contain;
+        display: block;
+    }
+    &__prev, &__next{
+        position: absolute;
+        top: 50%;
+        // transform: translateY(-50%);
+        background: none;
+        color: grey;
+        border: none;
+        cursor: pointer;
+        // height: 65px;
+        // width: 38px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 2;
+    }
+    &__prev:hover, &__next:hover{
+        color: $orangeColor;
+    }
+    &__prev{
+        left: 0;
+    }
+    &__next{
+        right: 0;
+    }
+    &__prev-icon, &__next-icon{
+        // font-size: 45px;
+        width: 80px;
+        height: 90px;
+        color: $lightGrey;
+    }
+    &__dots{
+        display: flex;
+        justify-content: center;
+        gap: 11px;
+        margin-top: 157px;
+    }
+    &__dot{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid $lightGrey;
+        background: $backgroundColor;
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+    &__dot:hover{
+        background: $orangeColor;
+    }
+    &__dot--active{
+        background: $lightGrey;
+    }
+}
+
