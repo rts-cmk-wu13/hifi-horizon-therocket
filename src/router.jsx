@@ -30,7 +30,7 @@ import Compare from "./pages/Compare";
 // import { handleSubmit } from "./api/actions";
 // import RequireAuth from "./components/RequireAuth";
 
-import Login from "./pages/Login";
+
 
 
 
@@ -95,6 +95,6 @@ const router = createBrowserRouter([
 
     }
 
-]);
+]}]);
 
 export default router
