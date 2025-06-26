@@ -60,7 +60,7 @@ export default function Header() {
                   <ul className="dropdown__content">
                     {categories.map((item, index) => (
                       <li key={index}>
-                        <Link to="/shop">{item}</Link>
+                        <Link to="/list">{item}</Link>
                       </li>
                     ))}
                   </ul>
