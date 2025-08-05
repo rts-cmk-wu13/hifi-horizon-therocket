@@ -54,10 +54,7 @@ export default function Footer() {
 
                 </div>
                 <hr></hr>
-                <div className="footer__secondary">
-                    <div><img src={stribe} alt="" /><img src={mastercard} alt="" /><img src={visa} alt="" /></div>
-                    <small className="footer__copyright">HiFi Horizon (Edinburgh) Ltd is registered in Scotland. No: SC049298. Registered office: 2 Joppa Rd, Edinburgh EH15 2EU</small>
-                </div>
+               
             </footer>
         </>
     )
